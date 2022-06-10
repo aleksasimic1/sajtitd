@@ -1,0 +1,19 @@
+O predvidjanju
+
+U vecini savremenih tehnologija možemo uociti postojanje algoritama za predvidanje naredne rijeci. Bilo da se radi o kucanju poruka, pretraživanju interneta ili necemu slicnom, cesto primjecujemo da nam softver nudi odredene rijeci kako bi se proces kucanja ubrzao. Iako možda ovakve usluge cesto ignorišemo, predvidanje naredne rijeci može biti veoma korisno ako je odradeno na pravi nacin, tj. ako nam zapravo pomaže u pretrazi ili pisanju poruke i precizno odreduje koja je moguca sljedeca rijec. Doktori cesto preporucuju predvidanje rijeci kao metod za ubrzavanje kucanja kod korisnika sa fizickim ogranicenjima.
+
+Neki od modela za predvidjanje
+
+LSTM
+
+LSTM je vještacka rekurentna neuronska mreža (RNN), koja može da obraduje ne samo pojedinacne tacke podataka poput slika, vec i citave sekvence podataka poput videa ili govora. LSTM se korsiti u prepoznavanju rukopisa, mašinskog prevodenja, prepoznavanju govora itd.
+
+
+Markovljev lanac
+
+Markovljev lanac je sekvenca dogadaja gdje vjerovatnoca buducnosti zavisi samo od trenutnog stanja. Imati svojstvo Markova znaci da, pored trenutnog stanja, buduce stanje sistema ne zavisi od prošlih. Markovljev lanac se cesto koristi u domenima poput finansija.
+
+
+Hibrid model
+
+Ideja hibrid modela je razmatranje predvidene rijeci LSTM modela, kao i liste predvidenih rijeci Markovljevog modela. Ako se LSTM predvidena rijec nalazi u listi, onda se uzima ta rijec. U suprotnom, kao predvidena se uzima jedna od rijeci koju je odabrao Markovljev model.
